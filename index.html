@@ -1,6 +1,17 @@
 <html>
-	<body>
-		<p>Hello World!</p>
-		<input type="button"></input>
+	<script>
+		function getImg() {
+			var x = document.getElementById("data");
+			var y = document.getElementById("pic");
+			y.src=x.value;
+		}
+	</script>
+	
+	<body align="vertical">
+		<p>Enter an image url here, or enter the imgur code to get the image.</p>
+		<input type="text" id="data" value="""></input>
+		<input type="button" id="submit" value="Get Image" onclick="getImg()"></button>
+		
+		<img id="pic" src=""></img>
 	</body>
 </html>
