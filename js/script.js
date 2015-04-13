@@ -1,3 +1,4 @@
-function test(){
+console.log("TEST!");
+function test() {
 
 }

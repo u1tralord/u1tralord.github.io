@@ -1,43 +1,37 @@
+*{
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
 div{
-	border: 1px solid red;
-}
-#page-content{
-	width: 70%;
-	margin: auto;
+	/*border: 1px solid red;*/
+    /*outline: 1px solid red;*/ 
 }
 
-.left-tab{
-	width: 50px;
-	height: 50px;
-	background-color: #000;
-	float:left;
-	display: inline-block;
-}
-
-.content-tab{
-	float: left;
-	height: 100px;
-	width: 500px;
-	background-color: #00f;
-	display: inline-block;
-}
-
-.right-tab{
-	width: 50px;
-	height: 50px;
-	background-color: #000;
-	float:left;
-	display: inline-block;
-}
-
-.section{
-	display: inline-block;
-	margin: auto;
-	clear: right;
-	clear:left;
+.wide-section{
+	width: 100vw;
 }
 
 #header{
+}
+
+#header-jumbotron{
+    /*background-color: coral;*/
+    background-image: url("../res/img/mountain.jpg");
+    background-size: 100% auto;
+    -webkit-filter: blur(3px) grayscale(80%) contrast(1.5) saturate(2);
+    height: 500px;
+}
+
+#jumbotron-bar{
+    position: absolute;
+    top:0;
+    height: 75px; 
+    width: 100%;
+    background-color: #373737;
+    opacity: 0.2;
 }
 
 #footer{
