@@ -13,55 +13,91 @@ div{
 .wide-section{
 	width: 100vw;
 }
-.vertical-align{
-    position: relative;
+.centerY{
+    position: absolute;
     top: 50%;
   	-webkit-transform: translateY(-50%);
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }
-.horizontal-align{
+.centerX{
     margin: auto;
     text-align: center;
 }
-
+#logo{
+    float:right;
+    height: 100%;
+    text-transform: uppercase;
+}
 #main-nav{
-
+    display: inline-block;
+    width: 100%;
+}
+#main-nav ul{
+    margin: 0px;
+    float: left;
+    margin-left: 40px;
 }
 
 .nav-item{
-    color: #fff;
     display: inline;
-    border: 1px solid #fff;
-    border-radius: 5px;
+    /*border: 1px solid #fff;
+    border-radius: 5px;*/
     padding: 5px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 8px 0px 8px;
 }
-.nav-item:hover{
-    border: 2px solid #000;
+.nav-item:hover a{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px 5px 10px;
+    -webkit-transition: all .1s ease-in-out;
 }
 .nav-item a{
     color: #fff;
+    height: 100%;
+    font-family: Segoe UI;
+    font-weight: lighter;
+    font-size: 18px;
 }
+nav-item a:visited{text-decoration: none;}
+nav-item a:active{text-decoration: none;}
+nav-item a:link{text-decoration: none;}
 
 #header{
 }
 
-#header-jumbotron{
+#jumbotronBG{
     /*background-color: coral;*/
     background-image: url("../res/img/atl-night.jpg");
     background-size: 100% auto;
-    -webkit-filter: blur(5px) contrast(1.5) saturate(0.5);
+    background-repeat: no-repeat;
+    -webkit-filter: blur(0px) contrast(1.5) saturate(0.5);
     height: 65vh;
+    max-height: 778px;
 }
 
-#header-jumbotron h1{
+#header h1{
+    font-family: Segoe UI;
+    font-weight: lighter;
+    font-size: 60px;
     color: #fff;
+
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+}
+#jumbotron-content{
+    display: inline-block;
+    border: 1px solid red;
+    background-color: #f00;
+    width: 50px;
+    height: 50px;
 }
 
 #jumbotron-bar{
     position: absolute;
-    top:0;
+    top: 0;
     height: 75px; 
     width: 100%;
     background:rgba(55,55,55,0.3);
