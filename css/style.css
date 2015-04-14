@@ -13,16 +13,50 @@ div{
 .wide-section{
 	width: 100vw;
 }
+.vertical-align{
+    position: relative;
+    top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+.horizontal-align{
+    margin: auto;
+    text-align: center;
+}
+
+#main-nav{
+
+}
+
+.nav-item{
+    color: #fff;
+    display: inline;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+}
+.nav-item:hover{
+    border: 2px solid #000;
+}
+.nav-item a{
+    color: #fff;
+}
 
 #header{
 }
 
 #header-jumbotron{
     /*background-color: coral;*/
-    background-image: url("../res/img/mountain.jpg");
+    background-image: url("../res/img/atl-night.jpg");
     background-size: 100% auto;
-    -webkit-filter: blur(3px) grayscale(80%) contrast(1.5) saturate(2);
-    height: 500px;
+    -webkit-filter: blur(5px) contrast(1.5) saturate(0.5);
+    height: 65vh;
+}
+
+#header-jumbotron h1{
+    color: #fff;
 }
 
 #jumbotron-bar{
@@ -30,8 +64,7 @@ div{
     top:0;
     height: 75px; 
     width: 100%;
-    background-color: #373737;
-    opacity: 0.2;
+    background:rgba(55,55,55,0.3);
 }
 
 #footer{
