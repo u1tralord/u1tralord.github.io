@@ -107,21 +107,60 @@ nav-item a:link{text-decoration: none;}
 
 }
 
-.square-input-box-u1tra{
-    width: 300px!important;
-    height: 31px!important;
-    background-color: #524d99!important;
-    border:0!important;
-    border-radius: 0!important;
-    white-space: nowrap;
-    overflow: hidden;
-
-    padding-left: 12px;
-    font-size: 12px;
-    /*color: #827e75;*/
-    color: #fff;
-    font-family: Roboto, arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol', Symbola, EmojiSymbols !important;
-
-    margin-top:12px;
+form{
+  position: absolute;
+  top:50px;
+  left: 300px;
 }
-.square-input-box-u1tra:focus{outline: none;}
+.field{
+  width: 300px;
+  height: 40px;
+  margin: 20px;
+}
+
+.field *{
+  width: 300px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: absolute;
+  left:0;
+}
+
+.field input{
+  background-color: #322d29;
+  font-size: 12px;
+  color: #827e75; 
+  font-family: Roboto, arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol', Symbola, EmojiSymbols !important;
+  
+  transform: translateX(0px);
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.field input:focus{outline:none;}
+.field:hover input{
+  padding-lefT: 15px;
+  transform: translateX(50px);
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.field label{
+  color: #fff;
+  background-color: #313a3d;
+  font-size: 1.45em;
+	letter-spacing: 0.075em;
+  text-align: center;
+  transform: translateX(0px);
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.field:hover label{
+  background-color: #902727;
+  width: 100px;
+  transform: translateX(-50px);
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.message-box:hover input{
+  height: 200px;
+}
