@@ -2,60 +2,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
 		<title>Jacob Poston</title>
-		
-		<script src="js/script.js"></script>
-		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-
 	</head>
 	
 	<body>
             <div id="page-content" class="wide-section">
-            <div id="header">
-                <div id="jumbotronBG">
-                    <div id="jumbotron-content">
-                        <h1 id="headline" >TITLE TEXT!</h1>
+                <div id="header">
+                    <div id="jumbotronBG">
+                        <div id="jumbotron-content">
+                            <h1 id="headline" >TITLE TEXT!</h1>
+                        </div>
+                    </div>
+                    <div id="jumbotron-bar">
+                        <nav id="main-nav">
+                            <ul class="centerY">
+                                <li class="nav-item"><a href="#">Link</a></li>
+                                <li class="nav-item"><a href="#">Link</a></li>
+                                <li class="nav-item"><a href="#">Link</a></li>
+                                <li class="nav-item"><a href="#">Link</a></li>
+                            </ul>
+                        </nav>
+                        <div id="logo">Jacob Poston</div>
                     </div>
                 </div>
-                <div id="jumbotron-bar">
-                    <nav id="main-nav">
-                        <ul class="centerY">
-                            <li class="nav-item"><a href="#">Link</a></li>
-                            <li class="nav-item"><a href="#">Link</a></li>
-                            <li class="nav-item"><a href="#">Link</a></li>
-                            <li class="nav-item"><a href="#">Link</a></li>
-                        </ul>
-                    </nav>
-                    <div id="logo">Jacob Poston</div>
+
+                <div id="content-body">
+
+
+
                 </div>
-            </div>
-            
-            <div id="content-body">
-            
-                
-            
-            </div>
-            
-            <div id="footer">
-                <form id="contact-form">
-                    <div class="field name-box">
-                        <input class="text-area" type="text" id="name" placeholder="Who Are You?"/>
-                        <label for="name">Name</label>
-                    </div>
 
-                    <div class="field email-box">
-                        <input class="text-area" type="text" id="email" placeholder="Example@Email.com"/>
-                        <label for="email">Email</label>
-                    </div>
+                <div id="footer">
 
-                    <div class="field message-box">
-                        <textarea class="text-area" id="message" placeholder="Your message goes here..."></textarea>
-                        <label for="message">Message</label>
+                    <div id="contact-section">
+                        <form id="contact-form">
+                            <label><h1>Contact Me:</h1></label>
+                            <div class="field name-box">
+                                <input class="text-area" type="text" id="name" placeholder="Who Are You?"/>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="field email-box">
+                                <input class="text-area" type="text" id="email" placeholder="Example@Email.com"/>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="field message-box">
+                                <textarea class="text-area" placeholder="Your message goes here..." id="message"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button class="contact-submit">Send</button>
+                        </form>
                     </div>
-
-                    <button class="button" onclick="">Send!</button>
-                </form>
-            </div>
+                </div>
             </div>
 	</body>
+    <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+    <script src="js/script.js"></script>
 </html>
