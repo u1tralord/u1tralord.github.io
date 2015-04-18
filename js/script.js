@@ -3,7 +3,7 @@ $( ".field" ).hover(
       $(this).addClass("field-expanded");
   },
   function() {
-    	if($( this ).find( ".text-area" ).val() == ""){
+    	if($( this ).find( ".text-area" ).val() == ""  && !$(this).find(".text-area").is(':focus')){
     	$(this).removeClass("field-expanded");
       }
   }
@@ -15,8 +15,7 @@ $( ".field" ).click(function() {
 
 $( ".text-area" ).blur(
   function() {
-    //$( this ).find( ".text-area" ).css( "background-color", "red" );
-    var value = $( this ).val();
-    if(value != "");
+      if($( this ).val() == "")
+        $( this ).parent().removeClass("field-expanded");
   }
 );
