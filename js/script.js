@@ -19,3 +19,7 @@ $( ".text-area" ).blur(
         $( this ).parent().removeClass("field-expanded");
   }
 );
+
+$(".contact-submit").click(function(){
+   window.open('mailto:poston.jacob@gmail.com'); 
+});
