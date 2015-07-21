@@ -29,6 +29,7 @@ div{
 	height: 100%;
 	text-transform: uppercase;
 }
+/*
 #main-nav{
 	display: inline-block;
 	width: 100%;
@@ -67,9 +68,6 @@ nav-item a:active{
 nav-item a:link{
 	text-decoration: none;
 }
-
-/*
-HOLY CRAP I THINK I GOT IT
 */
 
 * {
@@ -105,111 +103,16 @@ HOLY CRAP I THINK I GOT IT
   left: 50%;
   transform:translate(-50%,-50%);
 }
-
 #super-center h1{
   color: #fff;
   font-size: 3em;
+  text-align: center;
 }
 #super-center p{
   color: #fff;
   text-align: center;
 }
 
-/*SDFGSDFGSDFGSDFG
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.jumbotron{
-  position: relative;
-  background-position:center;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 70vh;
-  min-width: 600px;
-}
-
-.jumbo-layer{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-}
-
-.jumbo-layer *{
-  position: relative;
-}
-
-#header-jumbotron {
-  background-image: url(https://exposure.imgix.net/production/posts/21963/cover-photo/cover-1390800725.jpg);
-}
-
-#op-layer{
-  background:rgba(35,25,25,0.3);
-}
-
-#jumbo-content{
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-}
-
-#jumbo-center{
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform:translate(-50%,-50%);
-}
-
-#jumbo-center h1{
-  color: #fff;
-  font-size: 3em;
-}
-#jumbo-center p{
-  color: #fff;
-  text-align: center;
-}
-
-#jumbo-nav li{
-  display: inline;
-}*/
-/*
-#jumbotronBG{
-	background-image: url("../res/img/atl-night.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	height: 65vh;
-	max-height: 778px;
-	-webkit-filter: blur(0px) contrast(1.5) saturate(0.5);
-}
-#header h1{
-	color: #fff;
-	font-family: Segoe UI;
-	font-size: 60px;
-	font-weight: lighter;
-	margin-left: 5%;
-}
-#jumbotron-content{
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	width: 330px;
-}
-#jumbotron-bar{
-	background: rgba(55,55,55,0.3);
-	height: 75px;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-*/
 #footer{
     overflow-y: auto;
 }
@@ -217,16 +120,22 @@ HOLY CRAP I THINK I GOT IT
 	background-color: #313a3d;
 	min-height: 300px;
 	width: 100%;
+	overflow: hidden;
 }
 #contact-form{
 	display: inline-block;
-	left: 50%;
 	position: absolute;
+	left: 50%;
 	transform: translateX(-50%);
 }
 #contact-form *{
 	font-family: Segoe UI;
 	font-weight: lighter;
+}
+#contact-form span{
+	width: 100px;
+	height: 5px;
+	background: #fff;
 }
 #contact-form label h1{
 	color: #fff;
@@ -252,7 +161,7 @@ HOLY CRAP I THINK I GOT IT
 	height: 200px!important;
 }
 .field .text-area{
-	background-color: #322d29;
+	background-color: #313a3d/*#322d29*/;
 	color: #827e75;
 	font-family: Roboto, arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol', Symbola, EmojiSymbols !important;
 	font-size: 12px;
@@ -278,6 +187,7 @@ HOLY CRAP I THINK I GOT IT
 	width: 150px;
 }
 .field-expanded .text-area{
+	background: #322d29;
 	padding-left: 15px;
 	transform: translateX(75px);
 	-webkit-transition: all 0.3s ease-in-out;
