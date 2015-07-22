@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
+@import 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
 *{
 	border: none;
 	outline: none;
@@ -13,9 +14,10 @@ body{
     width:100vw;
     overflow-x: hidden;
     background: #1d2128;
-    min-width: 320px;
 }
-
+#footer{
+	min-height: 100px;
+}
 .section{
     position: relative;
     width: 100vw;
@@ -34,7 +36,14 @@ body{
     height: 2px;
     background: #fff;
 }
-
+.section-center{
+	background: rgba(255, 255, 255, 0.03);
+	width: 50%;
+	text-align: center;
+	border-left: 10% solid;
+	border-right: 10% solid ;
+	margin: 15px auto;
+}
 
 .super-section{
   width: 100vw;
@@ -198,7 +207,6 @@ body{
   background: rgba(255, 255, 255, 0.03);
   color: #333;
   font-family: 'Source Sans Pro', sans-serif;
-  margin: 15px auto;
   letter-spacing: 0.5px;
   position: relative;
   line-height: 1.4em;
@@ -207,26 +215,22 @@ body{
   list-style: none;
   text-align: left;
   font-weight: 1;
-  max-width: 50%;
 }
 
+.timeline .event {
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
 .timeline .event h3{
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1.5px;
   font-weight: 100;
   font-size: 1.5em;
 }
-.timeline .event h3:after{
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-}
-.timeline .event {
-  border-bottom: 1px dashed #fff;
-  padding-bottom: 25px;
-  margin-bottom: 50px;
-  position: relative;
+.timeline .event p{
+	margin-top: 10px;
 }
 .timeline .event:last-of-type {
   padding-bottom: 0;
@@ -258,7 +262,11 @@ body{
   content: "";
   top: 5px;
 }
+
 @media (max-width: 800px) {
+	.section-center{
+		width: 100%;
+	}
     .timeline { 
         max-width: 100%;
     }
