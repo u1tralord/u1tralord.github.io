@@ -15,14 +15,23 @@ body{
     overflow-x: hidden;
     background: #1d2128;
 }
+h3{
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+ul{
+	list-style: none;
+}
 #footer{
 	min-height: 100px;
 }
 .section{
     position: relative;
     width: 100vw;
-    min-width: 320px;
     text-align: center; 
+	min-width: 300px;
 }
 .section h1{
     letter-spacing: 1.5px;
@@ -39,12 +48,11 @@ body{
 .section-center{
 	background: rgba(255, 255, 255, 0.03);
 	width: 50%;
-	text-align: center;
+	text-align: left;
 	border-left: 10% solid;
 	border-right: 10% solid ;
 	margin: 15px auto;
 }
-
 .super-layer{
   position: absolute;
   top: 0;
@@ -183,18 +191,6 @@ body{
 	transform: scale(1.05) translateX(-50%);
 	-webkit-transition: all .1s ease-in-out;
 }
-
-#experience-section {
-    margin-top: 15px;
-    text-align: center; 
-}
-#experience-section span{
-    display: inline-block;
-    margin-top: 15px;
-    width: 250px;
-    height: 2px;
-    background: #fff;
-}
 /* Timeline */
 .timeline {
   border-left: 4px solid #c95600;
@@ -208,7 +204,6 @@ body{
   line-height: 1.4em;
   font-size: 1.03em;
   padding: 30px;
-  list-style: none;
   text-align: left;
   font-weight: 1;
 }
@@ -219,14 +214,8 @@ body{
   margin-bottom: 50px;
   position: relative;
 }
-.timeline .event h3{
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1.5px;
-  font-weight: 100;
-  font-size: 1.5em;
-}
-.timeline .event p{
-	margin-top: 10px;
+.timeline .event div{
+	margin-top: 10px!important;
 }
 .timeline .event:last-of-type {
   padding-bottom: 0;
@@ -243,10 +232,8 @@ body{
   left: -230px;
   color: #fff;
   content: attr(data-date);
-  text-align: left;
   font-weight: 400;
   font-size: 0.9em;
-  min-width: 120px;
 }
 .timeline .event:after {
   box-shadow: 0 0 0 4px #c95600;
@@ -276,7 +263,7 @@ body{
         color: white;
         padding: 2px 8px 2px 8px;
         content: attr(data-date);
-        text-align: right;
+        text-align: left;
         font-weight: 400;
         font-size: 0.9em;
         min-width: 120px;

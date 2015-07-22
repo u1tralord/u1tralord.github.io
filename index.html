@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <title>Jacob Poston</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <!--<link rel="stylesheet" type="text/css" href="maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />-->
     </head>
     <body>
     <div id="page-content" class="wide-section">
@@ -25,28 +25,37 @@
                 <h1>Education</h1>
 				<span></span>
                 <div class="section-center">
-					<div>
-						<h3>Georgia Southern University</h3>
-						<ul>
-							<li>Computer Science Major</li>
-						</ul>
-					</div>
-					<div>
-						<h3>Gwinnett School of Math, Science, and Technology</h3>
-						<ul>
-							<li>AP Computer Science</li>
-							<li>Intorductory to Computer Science</li>
-							<li>Junior and Senior Fellowship Experience</li>
-							<li>Honors Phyiscs</li>
-							<li>Honors Chemistry</li>
-						</ul>
-					</div>
+					<ul class="timeline">
+						<li class="event" data-date="2015-2019">
+							<h3>Georgia Southern University</h3>
+							<div>
+								<ul>
+									<li>Computer Science Major</li>
+								</ul>
+							</div
+						</li>
+						<li class="event" data-date="2011-2015">
+							<h3>Gwinnett School of Math, Science, and Technology</h3>
+							<div>
+								<ul>
+									<li>AP Computer Science</li>
+									<li>Intorductory to Computer Science</li>
+									<li>Junior and Senior Fellowship Experience</li>
+									<li>Honors Phyiscs</li>
+									<li>Honors Chemistry</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
 				</div>
             </div>
             <div class="section" id="skills-section">
                 <h1>Skills</h1>
 				<span></span>
-                <div class="section-center"></div>
+                <div class="section-center">
+					<canvas width="100px" height="100px" id="doughnut"></canvas>
+					<canvas width="100px" height="100px" id="pie"></canvas>
+				</div>
             </div>
             <div class="section" id="experience-section">
                 <h1>Experience</h1>
@@ -55,16 +64,16 @@
                     <ul class="timeline">
                         <li class="event" data-date="Summer 2015">
                             <h3>NCR Staging Technician</h3>
-                            <p>This is a field where I will explain what I did while working here, and reasons I left. Also, I
-                            could add contact info to contact previous employers.</p>
+                            <div><p>This is a field where I will explain what I did while working here, and reasons I left. Also, I
+                            could add contact info to contact previous employers.</p></div>
                         </li>
                         <li class="event" data-date="High School: Senior">
                             <h3>NCR Internship</h3>
-                            <p>Body</p>
+                            <div><p>Body</p></div>
                         </li>
                         <li class="event" data-date="High School: Junior">
                             <h3>NCR Internship</h3>
-                            <p>Body</p>
+                            <div><p>Body</p></div>
                         </li>
                     </ul>
                 </div>
@@ -101,6 +110,7 @@
         </div>
     </div>
     <script src="js/jquery-1.11.2.js"></script> 
+	<script src="js/Chart.min.js"></script> 
     <!--<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>-->
      
     <script src="js/script.js"></script></body>
