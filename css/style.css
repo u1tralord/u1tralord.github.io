@@ -268,9 +268,9 @@ ul{
         font-size: 0.9em;
         min-width: 120px;
     }
-    .timeline .event p {
-        top: 27px;
-        padding: 10px 0px 10px 0px;
+	.timeline .event div{
+		top: 27px;
+		padding: 10px 0px 10px 0px;
         position: relative;
-    }
+	}
 }
