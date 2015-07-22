@@ -1,5 +1,5 @@
 <html>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<head>
 		<title>Jacob Poston</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -9,7 +9,19 @@
 	<body>
             <div id="page-content" class="wide-section">
                 <div id="header">
-                    <div class="super-section" id="jumbo">
+                    <!--<div class="super-section" id="jumbo">
+                        <div class="super-layer" id="op-layer"></div>
+                        <div class="super-layer" id="content-layer">
+                            <div id="super-center">
+                                <h1>Jacob Poston!</h1>
+                                <p>Sub title!</p>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+
+                <div id="content-body">
+                    <div class="section" id="jumbo">
                         <div class="super-layer" id="op-layer"></div>
                         <div class="super-layer" id="content-layer">
                             <div id="super-center">
@@ -18,15 +30,21 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div id="content-body">
-					<div id="experience-section">
+                    <div class="section" id="education-section">
+						<h1>Education</h1>
+                        <span></span>
+                    </div>
+                    <div class="section" id="skills-section">
+						<h1>Skills</h1>
+                        <span></span>
+                    </div>
+					<div class="section" id="experience-section">
 						<h1>Experience</h1>
-						<ul class="timeline">
+                        <span></span>
+                        <ul class="timeline">
 							<li class="event" data-date="Summer 2015">
 								<h3>NCR Staging Technician</h3>
-								<p>Body</p>
+								<p>This is a field where I will explain what I did while working here, and reasons I left. Also, I could add contact info to contact previous employers.</p>
 							</li>
 							<li class="event" data-date="High School: Senior">
 								<h3> NCR Internship</h3>
@@ -38,15 +56,14 @@
 							</li>
 						</ul>
 					</div>
-
-                </div>
-
-                <div id="footer">
-
-                    <div id="contact-section">
+                    <div class="section" id="portfolio-section">
+						<h1>Portfolio</h1>
+                        <span></span>
+                    </div>
+                    <div class="section" id="contact-section">
+						<h1>Contact Me</h1>
+                        <span></span>
                         <form id="contact-form">
-                            <label><h1>Contact Me:</h1></label>
-							<span></span>
                             <div class="field name-box">
                                 <input class="text-area" type="text" id="name" placeholder="Who Are You?"/>
                                 <label for="name">Name</label>
@@ -62,6 +79,9 @@
                             <button type="submit" class="contact-submit">Send</button>
                         </form>
                     </div>
+                </div>
+
+                <div id="footer">
                     <div id="footer-links">
                     </div>
                 </div>
