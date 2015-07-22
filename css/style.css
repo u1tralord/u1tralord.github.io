@@ -45,10 +45,6 @@ body{
 	margin: 15px auto;
 }
 
-.super-section{
-  width: 100vw;
-  position: relative;
-}
 .super-layer{
   position: absolute;
   top: 0;
