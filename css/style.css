@@ -38,7 +38,7 @@ ul{
     font-weight: 100;
     font-size: 2.4em;
 }
-.section span{
+.section > span{
     display: inline-block;
     margin-top: 15px;
     width: 250px;
@@ -46,6 +46,8 @@ ul{
     background: #fff;
 }
 .section-center{
+    position: relative;
+    display: block;
 	background: rgba(255, 255, 255, 0.03);
 	width: 50%;
 	text-align: left;
@@ -53,6 +55,66 @@ ul{
 	border-right: 10% solid ;
 	margin: 15px auto;
 }
+
+/*************************/
+/*****Section Specific****/
+/*************************/
+#skillsDisplay{
+    display: inline-block;
+}
+#skillsDisplay h3 {
+    text-align: center
+}
+#skillsLegend{
+    display: inline-block;
+}
+#skillsChart {
+    margin: 15px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.doughnut-legend {
+  float: left;
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.doughnut-legend li * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.doughnut-legend li {
+  margin: 5px;
+  display: block;
+}
+
+.doughnut-legend li div {
+  font-size: 1em;
+  width: 3em;
+}
+
+.doughnut-legend li span {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.doughnut-legend li p:before {
+  
+}
+
+/*************************/
 .super-layer{
   position: absolute;
   top: 0;

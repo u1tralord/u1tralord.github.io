@@ -1,15 +1,15 @@
 var pieOptions = {
     //Boolean - Whether we should show a stroke on each segment
-    segmentShowStroke : false,
+    segmentShowStroke : true,
 
     //String - The colour of each segment stroke
     segmentStrokeColor : "#fff",
 
     //Number - The width of each segment stroke
-    segmentStrokeWidth : 2,
+    segmentStrokeWidth : 1,
 
     //Number - The percentage of the chart that we cut out of the middle
-    percentageInnerCutout : 50, // This is 0 for Pie charts
+    percentageInnerCutout : 60, // This is 0 for Pie charts
 
     //Number - Amount of animation steps
     animationSteps : 100,
@@ -24,33 +24,56 @@ var pieOptions = {
     animateScale : false,
 
     //String - A legend template
-    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><div class=\"doughnut-value\"><%=segments[i].value%>%</div><span style=\"background-color:<%=segments[i].fillColor%>\"></span><p><%if(segments[i].label){%><%=segments[i].label%><%}%></p></li><%}%></ul>"
 
 };
 var skillsData = [
     {
-        value: 300,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
+        value: 40,
+        color:"#5B90BF",
+        highlight: "#000",
+        label: "C#"
     },
     {
-        value: 50,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
+        value: 30,
+        color: "#96b5b4",
+        highlight: "#000",
+        label: "Java"
     },
     {
-        value: 100,
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
+        value: 20,
+        color: "#CC474B",
+        highlight: "#000",
+        label: "Node JS"
+    },
+    {
+        value: 15,
+        color: "#d08770",
+        highlight: "#000",
+        label: "HTML"
+    },
+    {
+        value: 15,
+        color: "#cc478e",
+        highlight: "#000",
+        label: "CSS"
+    },
+    {
+        value: 5,
+        color: "#5bbfbc",
+        highlight: "#000",
+        label: "Javascript"
+    },
+    {
+        value: 5,
+        color: "#b48ead",
+        highlight: "#000",
+        label: "C++"
     }
 ];
-var myPieChart = new Chart(document.getElementById("pie").getContext("2d")).Pie(skillsData, pieOptions);
-var myDoughnutChart = new Chart(document.getElementById("doughnut").getContext("2d")).Doughnut(skillsData, pieOptions);
-//$("skills-section > div").append($());
-console.log(myPieChart.generateLegend());
+var myDoughnutChart = new Chart(document.getElementById("skillsChart").getContext("2d")).Doughnut(skillsData, pieOptions);
+$("#skillsLegend").append(myDoughnutChart.generateLegend());
+console.log(myDoughnutChart.generateLegend());
 $( ".field" ).hover(
   function() {
       $(this).addClass("field-expanded");
