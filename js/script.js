@@ -46,6 +46,12 @@ var skillsData = [
         highlight: "#000",
         label: "Node JS"
     },
+	{
+        value: 20,
+        color: "#cc478e",
+        highlight: "#000",
+        label: "CSS"
+    },
     {
         value: 15,
         color: "#d08770",
@@ -53,24 +59,19 @@ var skillsData = [
         label: "HTML"
     },
     {
-        value: 15,
-        color: "#cc478e",
-        highlight: "#000",
-        label: "CSS"
-    },
-    {
-        value: 5,
+        value: 10,
         color: "#5bbfbc",
         highlight: "#000",
         label: "Javascript"
-    },
-    {
-        value: 5,
-        color: "#b48ead",
-        highlight: "#000",
-        label: "C++"
     }
 ];
+var sum = 0;
+skillsData.forEach(function(dataPoint){
+	sum += dataPoint.value;
+});
+skillsData.forEach(function(dataPoint){
+	dataPoint.value = Math.round(100*(dataPoint.value/sum));
+});
 var myDoughnutChart = new Chart(document.getElementById("skillsChart").getContext("2d")).Doughnut(skillsData, pieOptions);
 $("#skillsLegend").append(myDoughnutChart.generateLegend());
 console.log(myDoughnutChart.generateLegend());
