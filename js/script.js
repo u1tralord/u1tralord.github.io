@@ -74,7 +74,7 @@ skillsData.forEach(function(dataPoint){
 });
 var myDoughnutChart = new Chart(document.getElementById("skillsChart").getContext("2d")).Doughnut(skillsData, pieOptions);
 $("#skillsLegend").append(myDoughnutChart.generateLegend());
-console.log(myDoughnutChart.generateLegend());
+
 $( ".field" ).hover(
   function() {
       $(this).addClass("field-expanded");
