@@ -273,6 +273,9 @@ ul{
   margin-bottom: 50px;
   position: relative;
 }
+.timeline .event h3{
+    line-height: 1.4em;
+}
 .timeline .event div{
 	margin-top: 10px!important;
 }
